@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <script src="https://kit.fontawesome.com/4bee39367f.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="typeWriter()">
+  <main>
+    <div class="grid-container">
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="#projekter">Projekter</a></li>
+          <li><a href="#cv">cv</a></li>
+          <li><a href="https://www.linkedin.com/in/casper-knudsen-90050885/" target="_blank"> Linkedin
+            </a></li>
+        </ul>
+      </nav>
+
+
+      <article id="toggle" onclick="openMenu()">
+        <span id="bar1" class="bar"></span>
+        <span id="bar2" class="bar"></span>
+        <span id="bar3" class="bar"></span>
+      </article>
+
+
+      <section class="me">
+        <img src="casper3.jpg" alt="me">
+      </section>
+
+      <section id="icons">
+        <p class="icon"><i class="fab fa-html5"></i></p>
+        <p class="icon"><i class="fab fa-css3 "></i></p>
+        <p class="icon"><i class="fab fa-js-square"></i></p>
+        <p class="icon"><i class="fab fa-github-square"></i></p>
+        <p class="icon"><i class="fas fa-wine-glass-alt"></i></p>
+        <p class="icon"><i class="fas fa-balance-scale "></i></p>
+      </section>
+
+      <section id="beskrivelse">
+        <h1></h1>
+        <p> Jeg hedder Casper og kan
+          tilbyde unik tværfaglig viden, da jeg har indsigt i både jura og kodning.
+          Jeg vil gerne arbejde i
+          krydsfeltet mellem jura og teknologi.</p>
+      </section>
+
+
+      <section id="projekter">
+        <h2>Projekter</h2>
+        <p>Her kan du orientere dig om mine projekter.</p>
+      </section>
+
+
+      <section id="swiper">
+        <h2> Swiper JS </h2>
+        <p> Se en slider med en 3d agtig effekt kodet i swiper JS, som jeg har lært at kende ved siden af
+          studierne i multimediedesign. Træk i billederne på siden, som knappen fører til og se effekten.</p>
+        <p><a href="http://wineandlaw.dk/swiper/index.html" class="button">Slider i Swiper js</a></p>
+      </section>
+
+
+      <section id="hjemmesider">
+        <h2>Hjemmeside </h2>
+        <p> Her ses en hjemmeside til en tøjbutik.Hjemmesiden er udviklet med teknologien Wordpress. </p>
+        <p> <a href="http://wineandlaw.dk/test.wordpress/" class="button">Hjemmeside</a></p>
+      </section>
+
+      <section id="landingpage">
+        <h2>Landing Page</h2>
+        <p>Se her en landing page til en tøjbutik. Landing pagen er udviklet med html, css , jquery og javascript.</p>
+        <p><a href="http://wineandlaw.dk/Tendens1/Index.html" class="button">Landing page</a></p>
+      </section>
+
+      <section id="burger">
+        <h2>Burgermenu</h2>
+        <p>Se her en burgermenu, hvor burgermenuen vises på mobil. Besøgende på desktop skal på siden, som
+          knappen fører til, trykke på f12 og dernæst ctrl (cmd MAC) shift m og vælge mobil.
+        </p>
+        <p><a href="http://wineandlaw.dk/burger/index.html" class="button">Burgermenu</a></p>
+      </section>
+
+      <section id="eyetracking">
+        <h2>Eyetracking</h2>
+        <p> Undervejs i mine studier i multimediedesign har jeg prøvet at arbejde med avanceret UX i form af
+          eyetracking. Eyetracking måler, hvor brugeren sig på en skærm. Se videoen for et eksempel på
+          eyetracking. </p>
+      </section>
+
+
+      <video width="300" height="170" controls>
+        <source src="momondo.mp4" type="video/mp4">
+      </video>
+
+
+
+
+      <section id="app">
+        <h2>Vejrapp</h2>
+        <p>Som led i min undervisning på Multimediedesign har jeg udviklet en vejrapp i Bootstrap og Jquery.</p>
+        <p><a href="http://wineandlaw.dk/app/index.html  " class="button"> Se en vejrapp</a></p>
+      </section>
+
+
+
+      <section id="cv">
+        <h2>CV</h2>
+        <p>Her kan du orientere dig om mine uddannelser m.m.</p>
+      </section>
+
+
+      <section id="jura">
+        <h2>Jura</h2>
+        <p>2013:Akademiuddannelse i personalejura, Copenhagen Business Academy, cph City.
+          2012:Cand.jur: Københavns Universitet
+          2009:Ba.jur:Københavns Universitet. </p>
+      </section>
+
+      <article id="jura1">
+        <img src="court1.png" alt="jura">
+      </article>
+
+      <section id="multi">
+        <h2>Multimediedesign</h2>
+        <p>2019-2020: Zealand Erhvervsakademi
+          uafsluttede studier i Multimediedesign. Jeg studerede på avanceret digital udvikling.</p>
+      </section>
+
+      <p id="multi1">
+        <img src="kode1.png" alt="kode">
+      </p>
+
+
+      <section id="erfaring">
+        <h2>Erhvervserfaring</h2>
+        <p>Klik på knappen nedenunder for at se min erhvervserfaring.</p>
+        <button onclick="openText()" class="button">Erfaring</button>
+      </section>
+
+      <div id="myDIV">
+
+        <div id="remove">
+          <span class="close" onclick="closeText()">&times;</span>
+          <h4>0.6.09-2016-05.12-2016: Jurist hos Wuxus A/S.</h4>
+          <h4> 15.08-2013-14.02-2014: Jurist hos Køge Kommune.</h4>
+          <h4>09.05-2016 _ : Vinmand hos Salling Group, Føtex Ølbycentret. </h4>
+        </div>
+      </div>
+
+      <section id="kompetencer">
+        <h2>Kompetencer</h2>
+        <p>Klik på knappen for at se mine kompetencer.</p>
+        <button onclick="mySkills()" class="button"> Se kompetencer</button>
+      </section>
+
+
+
+      <div id="myDIV2">
+
+        <div id="remove2">
+          <span class="close" onclick="closeMyskills()">&times;</span>
+          <h4>HTML, CSS, Bootstrap, Javascript, Jquery, React, Wordpress</h4>
+          <h4>Visual Studio Code</h4>
+          <h4>Adobe XD, Photoshop</h4>
+          <h4>It-ret, Immaterialret, Ansættelses - og arbejdsret, Kontraktret</h4>
+        </div>
+      </div>
+
+
+      <article id="kontakt">
+        <h2>Kontakt</h2>
+      </article>
+
+      <section id="kontaktmåder">
+        <p>Du kan kontakte mig på følgende måder:</p>
+      </section>
+
+      <section id="mobil">
+        <h3>Mobil</h3>
+        <p id="mobilos"> <i class="fas fa-mobile-alt"></i></p>
+        <p>51 22 79 93</p>
+      </section>
+
+      <section id="kommunikation">
+        <h3>Email</h3>
+        <p><a href="mailto:casperkn85@gmail.com" target="_blank">casperkn85@gmail.com</a>
+        </p>
+        <p id="answer"><a href="mailto:casperkn85@gmail.com" target="_blank"><i class="fas fa-at">
+            </i> </a></p>
+
+      </section>
+
+
+      <section id="svar">
+        <p id="reply"> <i class="fas fa-reply"></i></p>
+        <p>Jeg svarer snart.</p>
+      </section>
+
+
+
+
+
+      <button id="myBtn" onclick="topFunction()" title="Til top"><i class="fas fa-arrow-up"></i></button>
+
+      <footer>
+        <section id="email">
+          <h3>Email</h3>
+          <i class="far fa-envelope">
+          </i>
+          <p><a href="mailto:casperkn85@gmail.com" target="_blank">casperkn85@gmail.com</a></p>
+        </section>
+
+        <section id="telefon">
+          <h3>Telefon</h3>
+          <i class="fas fa-mobile-alt"></i>
+          <h4>51 22 79 93</h4>
+        </section>
+
+
+        <section id="copyright">
+          <h3>Copyright</h3>
+          <i class="fas fa-copyright"></i>
+          <p>Casper Knudsen</p>
+        </section>
+      </footer>
+
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <main>
+            
+            <div id="nav">   
+            <div id="nav2">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button id="btn" onclick ="openNav()">
+            Open
+        </button>
+
+
+
+            <section>
+                <button onclick="openUP()">Try it</button>
+            </section>
+
+            <div id="myDIV">
+                <div id="remove">
+                    <button onclick="closeText()">Try it</button>
+                    <h4>0.6.09-2016-05.12-2016: Jurist hos Wuxus A/S.</h4>
+                    <h4> 15.08-2013-14.02-2014: Jurist hos Køge Kommune.</h4>
+                    <h4>09.05-2016 _ : Vinmand hos Salling Group, Føtex Ølbycentret. </h4>
+                </div>
+            </div>
+
+
+
+
+<h4>HTML, CSS, Bootstrap, Javascript, Jquery, React, Wordpress</h4>
+        <h4>Visual Studio Code</h4>
+        <h4>Adobe XD, Photoshop</h4>
+        <h4>It-ret, Immaterialret, Ansættelses - og arbejdsret, Kontraktret</h4
+
+
+
+
+          
+</main>
+    </div>
+
+    
+
+</body>
+
+</html>

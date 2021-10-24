@@ -1,0 +1,19 @@
+ openUP = () => {
+   const element = document.querySelector("#myDIV");
+   element.classList.add("mystyle");
+   document.querySelector("#remove").style.display = "block"
+ }
+
+
+ closeText = () => {
+   const element = document.querySelector("#myDIV");
+   element.classList.remove("mystyle");
+   document.querySelector("#remove").style.display = "none";
+ }
+
+
+ openNav = () => {
+   const element = document.querySelector("#nav");
+   element.classList.add("style");
+   document.querySelector("#nav2").style.display= "block";
+ }
