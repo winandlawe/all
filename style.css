@@ -1,0 +1,785 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	background-image: linear-gradient(rgb(52 158 193), rgb(6 23 50), rgb(52 158 193));
+	background-attachment: fixed;
+	color: #fff;
+	scroll-behavior: smooth;
+	line-height: 1.6;
+	height: 100%;
+	width: 100%;
+}
+
+
+#toggle {
+	width: 35px;
+	height: 30px;
+	margin: 30px 10px 20px 20px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	z-index: 1000;
+	grid-area: menu;
+}
+
+
+.bar {
+	height: 5px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.5s ease-in;
+}
+
+#bar1 {
+	transform: translateY(-4px);
+}
+
+#bar3 {
+	transform: translateY(4px);
+}
+
+
+nav {
+	width: 0;
+	height: 0;
+	transition: 2s;
+	top: 0;
+	right: 0;
+	position: fixed;
+	grid-area: menu;
+	overflow: hidden;
+}
+
+
+nav ul {
+	margin: 0 20px;
+	display: none;
+	text-align: center;
+}
+
+
+nav ul li {
+	list-style: none;
+	padding: 16px 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 8px 8px 32px;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	border-bottom: 1px solid #fff;
+}
+
+nav.active {
+	background: #051d50;
+	width: 100vw;
+	height: 300vh;
+	z-index: 600;
+	position: absolute;
+
+}
+
+#toggle,
+ul.active {
+	display: block;
+
+}
+
+
+.active.bar {
+	background-color: rgba(222, 230, 241, 0.952);
+	z-index: 1001;
+}
+
+.active #bar1 {
+	transform: translateY(6px) rotateZ(405deg);
+	background-color: #fff;
+	z-index: 1001;
+}
+
+.active #bar3 {
+	transform: translateY(-4px) rotateZ(-405deg);
+	background-color: #fff;
+	z-index: 1001;
+}
+
+.active #bar2 {
+	opacity: 0;
+}
+
+
+.me {
+	grid-area: me;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+section img {
+	max-width: 9.9rem;
+	border-radius: 40px;
+	box-shadow: 0px 0px 80px #fff;
+}
+
+
+#icons {
+	grid-area: icons;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	animation-name: colorchange;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+	from {
+		color: rgb(146, 12, 12);
+
+	}
+
+	to {
+		color: rgb(72, 83, 243);
+	}
+}
+
+#beskrivelse {
+	grid-area: beskrivelse;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#projekter {
+	grid-area: projekter;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#swiper {
+	grid-area: swiper;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#hjemmesider {
+	grid-area: hjemmesider;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#landingpage {
+	grid-area: landingpage;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#burger {
+	grid-area: burger;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#eyetracking {
+	grid-area: eyetracking;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+video {
+	grid-area: video;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#app {
+	grid-area: app;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+
+#cv {
+	grid-area: cv;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#jura {
+	grid-area: jura;
+	margin-left: 1em;
+	margin-right: 1em
+}
+
+#jura1 {
+	grid-area: jura1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article img {
+	max-width: 15rem;
+	box-shadow: 0px 0px 100px rgb(228, 221, 209);
+}
+
+#multi {
+	grid-area: multi;
+	margin-left: 1em;
+	margin-right: 1em
+}
+
+p img {
+	max-width: 15rem;
+	box-shadow: 0px 0px 80px rgb(228, 221, 209);
+}
+
+#multi1 {
+	grid-area: multi1;
+	margin-left: auto;
+	margin-right: auto
+}
+
+#erfaring {
+	grid-area: erfaring;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#remove {
+	display: none;
+}
+
+#remove2 {
+	display: none;
+
+}
+
+#kompetencer {
+	grid-area: kompetencer;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+
+
+.mystyle {
+	grid-area: remove;
+	background-color: #000;
+	padding: 1.5em;
+	border-radius: 30px;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	animation-name: glow;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	transition: ease-in 2s;
+	font-size: 1.2rem;
+}
+
+.mystyle2 {
+	grid-area: remove2;
+	background-color: #000;
+	padding: 1.5em;
+	border-radius: 30px;
+	width: 80%;
+	text-align: center;
+	margin-bottom: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	animation-name: glow;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	transition: ease-in 2s;
+	font-size: 1.2rem;
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
+
+#kontakt {
+	grid-area: kontakt;
+
+}
+
+#kontaktmåder {
+	grid-area: kontaktmåder;
+	margin-left: 2em;
+}
+
+
+#myBtn {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #fff;
+	padding: .6em;
+	border-radius: 10px;
+	font-size: 1.8rem;
+}
+
+
+.button {
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: rgba(160, 16, 16, 0.863);
+	color: #fff;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	text-decoration: none;
+	margin: .75em 0;
+	padding: .6em;
+	text-align: center;
+}
+
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+#mobil {
+	grid-area: mobil;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 2em;
+}
+
+
+#kommunikation {
+	grid-area: kommunikation;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#kommunikation a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#answer a {
+	color: #051d50;
+	font-size: 1.2rem;
+}
+
+#svar {
+	grid-area: svar;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 2em;
+}
+
+#reply {
+	color: #051d50;
+	font-size: 1.2rem;
+}
+
+
+#telefon {
+	grid-area: telefon;
+}
+
+#copyright {
+	grid-area: copyright;
+
+}
+
+#email {
+	grid-area: email;
+
+}
+
+#mobilos {
+	font-size: 1.3rem;
+}
+
+#answer {
+	font-size: 1.3rem;
+}
+
+#reply {
+	font-size: 1.3rem;
+}
+
+
+footer {
+	background-color: rgba(2, 8, 36, 0.829);
+	grid-area: footer;
+	margin-top: auto;
+	color: #fff;
+	padding: 2rem 0;
+	line-height: 1.6;
+	font-size: 1.2rem;
+	text-align: center;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"email"
+		"copyright"
+		"telefon";
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	grid-template-areas:
+		"menu"
+		"me "
+		"icons "
+		"beskrivelse"
+		"projekter"
+		"swiper"
+		"hjemmesider"
+		"landingpage"
+		"burger"
+		"eyetracking"
+		"video"
+		"app"
+		"cv"
+		"jura"
+		"jura1"
+		"multi"
+		"multi1"
+		"erfaring"
+		"remove"
+		"kompetencer"
+		"remove2"
+		"kontakt"
+		"kontaktmåder"
+		"mobil"
+		"kommunikation"
+		"svar"
+		"footer";
+}
+
+@media only screen and (min-width:500px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"menu menu "
+			"me icons"
+			"beskrivelse beskrivelse "
+			"projekter projekter "
+			"swiper hjemmesider"
+			"landingpage eyetracking "
+			"video video "
+			"burger app "
+			"cv cv "
+			"jura jura1"
+			"multi  multi1 "
+			"erfaring kompetencer"
+			"remove remove2 "
+			"kontakt kontakt"
+			"kontaktmåder kontaktmåder"
+			"mobil mobil "
+			"kommunikation kommunikation"
+			"svar svar "
+			"footer footer";
+	}
+
+	section img {
+		max-width: 10rem;
+	}
+
+	.me {
+		margin-right: 2em;
+		margin-left: .7em;
+	}
+
+	#icons {
+		align-items: center;
+		margin-left: 1em;
+	}
+
+	h1 {
+		font-size: 1.9rem;
+	}
+
+
+	#app {
+		margin-left: 1em;
+	}
+
+	#video {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#cv {
+		text-align: center;
+	}
+
+	article img {
+		margin-top: 2em;
+	}
+
+	#jura {
+		margin-left: 1em;
+
+	}
+
+
+	.mystyle {
+		width: 100%;
+		margin-left: 1em;
+	}
+
+	.mystyle2 {
+		width: 90%;
+		margin-right: 4em;
+
+	}
+
+	#mobilos {
+		font-size: 1.5rem;
+	}
+
+	#answer {
+		font-size: 1.5rem;
+	}
+
+	#reply {
+		font-size: 1.5rem;
+	}
+
+	footer {
+		text-align: center;
+		color: #fff;
+		font-size: 1rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"email copyright telefon";
+	}
+
+	footer a {
+		margin-left: .7em;
+	}
+
+}
+
+
+@media only screen and (min-width:768px) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"menu menu  menu "
+			"me icons  icons "
+			".  beskrivelse . "
+			"projekter . ."
+			"swiper app hjemmesider "
+			" landingpage eyetracking burger  "
+			".   video  . "
+			"cv cv cv  "
+			"jura  . multi "
+			"jura1 . multi1"
+			"erfaring  .  kompetencer "
+			"remove  .  remove2 "
+			"kontakt  kontakt kontakt "
+			"kontaktmåder  kontaktmåder kontaktmåder "
+			"mobil  mobil mobil "
+			"kommunikation  kommunikation kommunikation "
+			"svar svar svar "
+			"footer  footer footer ";
+	}
+
+
+	nav {
+		display: flex;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		position: unset;
+		background: rgba(2, 8, 36, 0.829);
+		margin: 0;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul li {
+		padding: 0;
+		display: inline-block;
+	}
+
+	nav ul li a {
+		display: block;
+		padding: 14px 16px;
+		transition: 2s;
+		text-align: center;
+		font-size: 1.6rem;
+		border-bottom: none;
+		color: #fff;
+	}
+
+	nav ul li a:hover {
+		color: rgb(146, 12, 12);
+		font-style: italic;
+	}
+
+	#toggle {
+		display: none;
+	}
+
+
+	.me {
+		margin-left: 2em;
+	}
+
+	#icons {
+		font-size: 3rem;
+		transition: 1.5s;
+		cursor: pointer;
+	}
+
+	.icon:hover {
+		transform: scale(1.15);
+	}
+
+	#projekter {
+		margin-left: 1em;
+	}
+
+
+	section img {
+		max-width: 18rem;
+		border-radius: 40%;
+	}
+
+	h1 {
+		font-size: 2.2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+
+	}
+
+	.button {
+		cursor: pointer;
+		font-size: 1.2rem;
+		padding: 0.4em;
+		transition: 1.5s;
+		background: rgba(160, 16, 16, 0.863);
+
+	}
+
+	.button:hover {
+		background: rgba(2, 8, 36, 0.829);
+	}
+
+	#myBtn {
+		font-size: 1.8em;
+		transition: 2s;
+		padding: .3em;
+		cursor: pointer;
+	}
+
+	#myBtn:hover {
+		background: rgba(2, 8, 36, 0.829);
+	}
+
+
+	article img {
+		max-width: 18rem;
+		cursor: pointer;
+	}
+
+	article img:hover {
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+	}
+
+	p img {
+		max-width: 18rem;
+		cursor: pointer;
+		opacity: 0.4;
+		transition: 1.5s;
+		margin-top: 1.7em;
+	}
+
+	p img:hover {
+		opacity: 1;
+	}
+
+	.mystyle {
+		width: 60%;
+		margin-left: 2em;
+		cursor: pointer;
+	}
+
+	.mystyle:hover {
+		text-decoration: underline;
+	}
+
+	.mystyle2 {
+		width: 60%;
+		margin-right: 2em;
+		cursor: pointer;
+	}
+
+	.mystyle2:hover {
+		text-decoration: underline;
+	}
+
+	footer {
+		color: #fff;
+		font-size: 1.2rem;
+		cursor: pointer;
+	}
+
+}
